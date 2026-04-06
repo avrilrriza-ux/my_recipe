@@ -7,16 +7,16 @@
 :root {
   --bg: #f5efe6;;
   --white: #ffffff;
-  --primary: #8b5e3c;
-  --primary-dark: #7b604e;     /* darker brown */
-  --primary-soft: #e6d3c3;     /* light brown border */
-  --primary-soft-2: #f0e4d8;
-  --text: #3b2f2f;             /* deep brown text */
-  --muted: #6b5e57;            /* soft brown-gray */
-  --muted-2: #8a7d75;
+  --primary: #C75D2C;
+  --primary-dark: #7B4019;    
+  --primary-soft: #e6d3c3;     
+  --primary-soft-2: #ffffff;
+  --text: #3b2f2f;             
+  --muted:#7B4019;            
+  --muted-2: #7B4019;
 
-  --green: #6b7f4e;            /* olive (still nice for reviews) */
-  --yellow: #c89b3c;  
+  --orange: #C75D2C;            
+  --yellow: #F8B259 ; 
 }
 
 html {
@@ -56,7 +56,7 @@ textarea {
 ========================= */
 
 .hero {
- background: linear-gradient(135deg, #c8a27c 0%, #b08968 50%, #bd8f69 100%);
+ background:#c75d2c;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -91,7 +91,7 @@ textarea {
   font-size: 4rem;
   line-height: 1.05;
   color: var(--white);
-  text-shadow: 2px 3px 0 rgba(180, 60, 60, 0.22);
+  text-shadow: 2px 3px 0 rgba(0, 0, 0, 0.22);
 }
 
 .hero-subtitle {
@@ -151,7 +151,7 @@ textarea {
 
 .intro-subtext {
   margin: 10px 0 0;
-  color: #888888;
+  color: #7B4019;
   font-size: 0.98rem;
   line-height: 1.6;
 }
@@ -164,7 +164,7 @@ textarea {
 .search-input {
   width: 100%;
   padding: 14px 18px;
-  border: 2px solid #ffd6d6;
+  border: 2px solid #C75D2C;
   border-radius: 999px;
   outline: none;
   font-size: 1rem;
@@ -174,7 +174,7 @@ textarea {
 }
 
 .search-input:focus {
-  border-color: #ff8e8e;
+  border-color: #DCCCAC;
   box-shadow: 0 0 0 4px rgba(255, 107, 107, 0.12);
 }
 
@@ -229,7 +229,7 @@ textarea {
 }
 
 .recipe-image-wrap {
-  background: linear-gradient(135deg, #fff0f0, #ffe8e8);
+  background: #F3E9DC;
   padding: 14px;
 }
 
@@ -296,7 +296,7 @@ textarea {
 }
 
 .page-btn:disabled {
-  background: #f2a9a9;
+  background: #feb185;
   cursor: not-allowed;
 }
 
@@ -318,19 +318,27 @@ textarea {
 /* =========================
    FOOTER
 ========================= */
-
 .footer {
   background: var(--primary);
   color: var(--white);
   margin-top: 40px;
-  padding: 22px 20px;
+  padding: 40px 20px;
   text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
 }
 
 .footer p {
   margin: 0;
   font-weight: 600;
 }
+
 
 /* =========================
    DETAIL PAGE
@@ -469,7 +477,7 @@ textarea {
   display: flex;
   align-items: center;
   gap: 12px;
-  background: #fff7f7;
+  background: #F3E9DC;
   border: 2px solid var(--primary-soft-2);
   border-radius: 18px;
   padding: 12px 14px;
@@ -500,7 +508,7 @@ textarea {
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  background: #fff7f7;
+  background: #F3E9DC;
   border: 2px solid var(--primary-soft-2);
   border-radius: 18px;
   padding: 14px;
@@ -531,7 +539,7 @@ textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #e6f4ea;
+  background: #F3E9DC;
   padding: 16px 18px;
   border-radius: 14px;
   cursor: pointer;
@@ -540,14 +548,14 @@ textarea {
 
 .section-header h3 {
   margin: 0;
-  color: #0f7a3a;
+  color: #7B4019;
 }
 
 .toggle-btn {
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  background: #0f7a3a;
+  background: #7B4019;
   color: #ffffff;
   display: inline-flex;
   align-items: center;
@@ -584,8 +592,8 @@ textarea {
 }
 
 .star {
-  font-size: 24px;
-  color: #d8d8d8;
+  font-size: 24px;   
+  color: #e6d3c3;  
 }
 
 .star.filled {
@@ -664,7 +672,7 @@ textarea {
   background: none;
   font-size: 30px;
   cursor: pointer;
-  color: #d8d8d8;
+  color:#e6d3c3;  
 }
 
 .modal-star.active {
@@ -674,7 +682,7 @@ textarea {
 .modal-input,
 .modal-textarea {
   width: 100%;
-  border: 1px solid #dddddd;
+  border: 1px solid #e6d3c3;  
   border-radius: 10px;
   padding: 12px;
   font-size: 1rem;
@@ -730,7 +738,7 @@ textarea {
 }
 
 .suggested-card {
-  background: #fff7f7;
+  background: #ffffff;  
   border: 2px solid var(--primary-soft-2);
   border-radius: 20px;
   overflow: hidden;
@@ -835,7 +843,7 @@ textarea {
   padding: 15px;
   border-radius: 15px;
   text-align: left;
-  border: 1px solid #dddddd;
+  border: 1px solid #e6d3c3;  
 }
 
 .single-review h4 {
@@ -855,7 +863,7 @@ textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #e6f4ea;
+  background: #ffffff;
   padding: 16px 18px;
   border-radius: 14px;
   cursor: pointer;
@@ -864,14 +872,14 @@ textarea {
 
 .section-header h3 {
   margin: 0;
-  color: #0f7a3a;
+  color: #7B4019;
 }
 
 .toggle-btn {
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  background: #0f7a3a;
+  background: #7B4019;
   color: #ffffff;
   display: inline-flex;
   align-items: center;

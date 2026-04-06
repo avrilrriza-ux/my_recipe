@@ -54,7 +54,7 @@ function HomePage() {
       <header className="hero">
         <div className="hero-inner">
           
-          <h1 className="hero-title">Seafood Recipes</h1>
+          <h1 className="hero-title">SeaSage Recipes</h1>
           <p className="hero-subtitle">
             Discover a variety of seafood dishes made simple. Browse recipes, explore ingredients, and follow step-by-step instructions to create delicious meals at home.
             🍳
